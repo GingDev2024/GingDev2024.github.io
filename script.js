@@ -81,8 +81,6 @@ const counterObserver = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.5 });
 
-const statsRow = document.getElementById('statsRow');
-if (statsRow) counterObserver.observe(statsRow);
 
 // ── Copy email to clipboard ──
 const copyBtn = document.getElementById('copyEmail');
