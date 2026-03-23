@@ -1,4 +1,6 @@
-/* ── script.js ── */
+/* ============================================================
+   script.js — Guiller Santos Portfolio
+   ============================================================ */
 
 // ── Cursor glow ──
 const glow = document.getElementById('cursorGlow');
@@ -7,7 +9,7 @@ document.addEventListener('mousemove', e => {
   glow.style.top  = e.clientY + 'px';
 });
 
-// ── Mobile nav ──
+// ── Mobile nav toggle ──
 const menuBtn = document.getElementById('menuBtn');
 const nav     = document.getElementById('nav');
 
@@ -55,7 +57,7 @@ const skillObserver = new IntersectionObserver(entries => {
 const skillSection = document.getElementById('skillBars');
 if (skillSection) skillObserver.observe(skillSection.closest('.card'));
 
-// ── Number counter ──
+// ── Number counter animation ──
 const counterObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -82,14 +84,14 @@ const counterObserver = new IntersectionObserver(entries => {
 const statsRow = document.getElementById('statsRow');
 if (statsRow) counterObserver.observe(statsRow);
 
-// ── Copy email ──
+// ── Copy email to clipboard ──
 const copyBtn = document.getElementById('copyEmail');
 if (copyBtn) {
   copyBtn.addEventListener('click', function () {
     navigator.clipboard.writeText('guillersantos111@gmail.com');
-    const icon = this.querySelector('i');
-    icon.className        = 'fas fa-check';
-    this.style.color      = 'var(--green)';
+    const icon       = this.querySelector('i');
+    icon.className   = 'fas fa-check';
+    this.style.color = 'var(--green)';
     setTimeout(() => {
       icon.className   = 'fas fa-copy';
       this.style.color = '';
