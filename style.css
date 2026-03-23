@@ -755,7 +755,7 @@ body::before {
   font-family: 'DM Mono', monospace;
   font-size: 12px;
   border: 1px solid rgba(56, 189, 248, 0.25);
-  cursor: default;
+  cursor:pointer;
   letter-spacing: 0.5px;
 }
 .cert-verify-static:hover { background: rgba(56, 189, 248, 0.18); transform: none; }
