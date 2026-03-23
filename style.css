@@ -284,8 +284,8 @@ body::before {
 
 .avatar-ring {
   position: relative;
-  width: clamp(180px, 22vw, 260px);
-  height: clamp(180px, 22vw, 260px);
+  width: clamp(220px, 30vw, 300px);
+  height: clamp(220px, 30vw, 300px);
 }
 
 .avatar-ring::before {
@@ -748,6 +748,9 @@ body::before {
 .reveal-stagger.visible > *:nth-child(2) { opacity: 1; transform: none; transition-delay: 0.08s; }
 .reveal-stagger.visible > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.16s; }
 .reveal-stagger.visible > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 0.24s; }
+.reveal-stagger.visible > *:nth-child(5) { opacity: 1; transform: none; transition-delay: 0.32s; }
+.reveal-stagger.visible > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 0.40s; }
+
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
